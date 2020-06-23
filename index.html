@@ -18,23 +18,42 @@
                 <img class="menu" src="imagenes/menu-abierto.svg" alt="Icono de menú">
             </div>
         </div>
-
+        <!-- Imagenes del home -->
         <div class="container">
             <div class="box">
-                <img class="model-img" src="imagenes/model/blue-image.jpg" alt="Modelo de Adidas">
+                <img class="model-img" onclick="ocultarFooter();" src="imagenes/model/blue.jpg" alt="Modelo de Adidas">
             </div>
             <div class="box">
-                <img class="model-img" src="imagenes/model/yellow-image.jpg" alt="Modelo de Adidas">
+                <img class="model-img" onclick="ocultarFooter();" src="imagenes/model/yellow.jpg" alt="Modelo de Adidas">
             </div>
             <div class="box">
-                <img class="model-img" src="imagenes/model/red-image.jpg" alt="Modelo de Adidas">
+                <img class="model-img" onclick="ocultarFooter();" src="imagenes/model/red.jpg" alt="Modelo de Adidas">
             </div>
             <div class="box">
-                <img class="model-img" src="imagenes/model/green-image.jpg" alt="Modelo de Adidas">
+                <img class="model-img" onclick="ocultarFooter();" src="imagenes/model/green.jpg" alt="Modelo de Adidas">
             </div>
         </div>
-
-        <div class="footer">
+        <!-- Segunda pantalla con caracteristicas -->
+        <div id="caracteristicas">
+            <h5>WOMEN'S ORIGINALS</h5>
+            <h1>TREFOIL TEE</h1>
+            <h6>$35</h6>
+            <div class="contenedor-remera">
+                <img src="imagenes/remera.jpg">
+            </div>
+            <h1>AVAILABLE COLORS</h1>
+            <div class="colors">
+                <span class="red"></span>
+                <span class="blue"></span>
+                <span class="pink"></span>
+            </div>
+        </div>
+        <!-- Botón para volver al home -->
+        <div id="back" onclick="aparecer()">
+            <h2>BACK</h2>
+        </div>
+        <!-- Footer -->
+        <div id="footer">
             <h3>discover more</h3>
             <h1>adicolor.</h1>
             
@@ -50,5 +69,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
