@@ -1,7 +1,12 @@
 /* Tipografía */
 @font-face{
-    src:url('fonts/ITC Avant Garde Gothic LT.ttf');
-    font-family: 'ITC Avant Garde Gothic LT';
+    src: url('fonts/ITC Avant Garde Gothic LT.ttf');
+    font-family: 'adidasFont';
+}
+
+@font-face{
+    src: url('fonts/ITC Avant Garde Gothic LT.otf'), url('fonts/ITC Avant Garde Gothic LT.eot') ;
+    font-family: 'adidasFont';
 }
 
 /* Web */
@@ -116,7 +121,7 @@
     font-size: 28px;
     font-weight: 800;
     letter-spacing: -1px;
-    font-family: 'ITC Avant Garde Gothic LT';
+    font-family: 'adidasFont';
     color: rgb(112, 87, 221);
     margin-left: 190px;
     cursor: pointer;
