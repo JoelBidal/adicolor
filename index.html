@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adidas Originals</title>
-    <link rel="icon" type="image/png" href="imagenes/fav-icon.png">
+    <link rel="icon" type="image/png" href="#">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="fonts.css">
@@ -12,15 +12,19 @@
 <body>
     <section class="main-section">
         <div class="header">
-            <img class="logo-adidas" src="imagenes/adidas.png" alt="Logo de la marca Adidas">
+            <a href="index.html"><img class="logo-adidas" src="imagenes/adidas.png" alt="Logo de la marca Adidas"></a>
             <div class="icons">
                 <img class="compras" src="imagenes/supermercado.svg" alt="Icono de compras">
                 <img class="menu" src="imagenes/menu-abierto.svg" alt="Icono de menú">
             </div>
         </div>
+
+        <div id="texto-descriptivo">
+            <h1>new collection</h1>
+        </div>
         <!-- Imagenes del home -->
         <div class="container">
-            <div class="box">
+            <div class="box" >
                 <img class="model-img" onclick="ocultarFooter();" src="imagenes/model/blue.jpg" alt="Modelo de Adidas">
             </div>
             <div class="box">
@@ -36,21 +40,35 @@
         <!-- Segunda pantalla con caracteristicas -->
         <div id="caracteristicas">
             <h5>WOMEN'S ORIGINALS</h5>
-            <h1>TREFOIL TEE</h1>
-            <h6>$35</h6>
+            <h1>TRACK JACKET</h1>
+            <h6>$65</h6>
             <div class="contenedor-remera">
-                <img src="imagenes/remera.jpg">
+                <img src="imagenes/campera-yellow.jpg">
             </div>
             <h1>AVAILABLE COLORS</h1>
             <div class="colors">
+                <span class="black"></span>
                 <span class="red"></span>
                 <span class="blue"></span>
+                <span class="yellow"></span>
                 <span class="pink"></span>
             </div>
+            <div class="talles">
+            <h1>SELECT YOUR SIZE</h1>
+            <label for="select" class="tamaño">SIZE:</label>
+                <select name="select">
+                    <option value="1unidad" selected>SMALL</option> 
+                    <option value="2unidad">MEDIUM</option>
+                    <option value="3unidad">LARGE</option>
+                    <option value="4unidad">EXTRA LARGE</option>
+                </select>
+            </div>
+            <div class="joelbidal">developed with ❤️ by<a target="_blank" href="https://www.linkedin.com/in/joel-bidal-55852711b/">joelbidal</a></div>
         </div>
         <!-- Botón para volver al home -->
         <div id="back" onclick="aparecer()">
             <h2>BACK</h2>
+            <img src="imagenes/espalda.svg">
         </div>
         <!-- Footer -->
         <div id="footer">

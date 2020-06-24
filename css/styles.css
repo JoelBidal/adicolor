@@ -15,13 +15,10 @@
     width: 100%;
     z-index: 100;
 }
-
 .header .logo-adidas{
-    max-width: 4%;
+    max-width: 20%;
     height: auto;
-    padding: 1.2% 1.8%;
-    cursor: pointer;
-    z-index: 100;
+    padding: 5% 7%;
 }
 
 .icons{
@@ -46,7 +43,6 @@
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: #000;
 }
 
 .box{
@@ -62,7 +58,7 @@
     height: 100%;
     object-fit: cover;
     transition: all 400ms;
-    /* color: 75%; */
+    /* opacity: 75%; */
 }
 
 /* .box .model-img:hover{
@@ -85,6 +81,14 @@
     position: absolute;
     bottom: 0;
     margin: auto;
+    animation-name: aparecer-footer;
+    animation-duration: 0.3s;
+}
+
+@keyframes aparecer-footer{
+   0% {opacity: 0%; bottom: 3px;}
+   60% {opacity: 70%;}
+   100% {opacity: 100%; bottom: 0;}
 }
 
 #footer h3{
@@ -120,13 +124,17 @@
 
 #footer .cuatro{
     color: rgba(0, 0, 0, 0.400);
-    padding-right: 40px;
+    margin-right: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
+
+#footer .cuatro:hover{color: #000;}
 
 .lineas{
     display: flex;
     align-items: center;
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 .linea-uno{
@@ -143,7 +151,11 @@
     background-color: rgba(0, 0, 0, 0.281);
     border-radius: 5px ;
     margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
+
+.linea-dos:hover{background-color: rgba(0, 0, 0, 0.8);}
 
 .next-prev{
     display: flex;
@@ -159,6 +171,36 @@
 
 
 /* --------------- Segundo estado, aparecen las imagenes grandes ---------------- */
+
+#texto-descriptivo{
+    width: 30%;
+    height: 100vh;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    z-index: 101;
+}
+
+#texto-descriptivo h1{
+    font-size: 75px;
+    font-family: "ITC Avant Garde Gothic LT";
+    color: #fff;
+    font-weight: 600;
+    padding-left: 50px;
+    animation-name: aparecerCollection;
+    animation-duration: 0.5s;
+}
+
+@keyframes aparecerCollection{
+   0% {opacity: 0%; margin-left: -200px;}
+   60% {opacity: 40%;}
+   100% {opacity: 100%; margin-left: 0;}
+}
 
 .box img{
     z-index: 101;
@@ -192,11 +234,21 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1000;
+    padding: 5px;
     cursor: pointer;
 
     display: none;
     justify-content: center;
     align-items: center;
+    animation-name: aparecer-back-btn;
+    animation-duration: 0.3s;
+}
+
+@keyframes aparecer-back-btn{
+   0% {opacity: 0%; bottom: 3px;}
+   60% {opacity: 70%;}
+   100% {opacity: 100%; bottom: 0;}
 }
 
 #back h2{
@@ -205,7 +257,10 @@
     font-family: "ITC Avant Garde Gothic LT";
     font-style: normal;
     color: #000;
-    padding: 15px;
+    margin-right: 5px;
+}
+#back img{
+    max-width: 20px;
 }
 
 #caracteristicas{
@@ -218,17 +273,18 @@
 
     display: none;
     text-align: left;
-    animation-name: aparecer;
-    animation-duration: 0.3s;
+    animation-name: aparecerCaracteristicas;
+    animation-duration: 0.5s;
 }
 
-@keyframes aparecer{
-   0% {opacity: 0%; }
-   100% {opacity: 100%; }
+@keyframes aparecerCaracteristicas{
+   0% {opacity: 0%; right: 200px;}
+   60% {opacity: 70%;}
+   100% {opacity: 100%; right: 0;}
 }
 
 #caracteristicas h5, h6{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     font-family: "ITC Avant Garde Gothic LT";
     font-style: normal;
@@ -256,9 +312,10 @@
 
 #caracteristicas .contenedor-remera{
     width: 100%;
-    height: 300px;
-    background-color: #eceff1;
-    margin: 30px 0;
+    height: 250px;
+    /* background-color: #eceff1; */
+    background-color: #fff;
+    margin: 10px 0;
 
     display: flex;
     justify-content: center;
@@ -266,10 +323,20 @@
 }
 
 .contenedor-remera img{
-    max-width: 250px;
+    max-width: 330px;
     height: auto;
     cursor: pointer;
+    animation-name: aparecerImg;
+    animation-duration: 0.4s;
 }
+
+@keyframes aparecerImg{
+   0% {opacity: 0%;}
+   50% {opacity: 0%;}
+   100% {opacity: 100%;}
+}
+
+/* Colores disponibles */
 
 .colors{
     display: flex;
@@ -280,14 +347,69 @@
 }
 
 .colors span{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
 
-.colors .red{margin: 2px; background-color: red; opacity: 80%;}
-.colors .blue{margin: 2px; background-color: blue; opacity: 70%;}
-.colors .pink{margin: 2px; background-color: pink; opacity: 70%;}
+.colors .black{margin: 2px; background-color: black; opacity: 30%;}
+.colors .red{margin: 2px; background-color: red; opacity: 30%;}
+.colors .blue{margin: 2px; background-color: blue; opacity: 30%;}
+.colors .pink{margin: 2px; background-color: pink; opacity: 30%;}
+.colors .yellow{margin: 2px; background-color: yellow; opacity: 30%;}
 
-.colors .red:hover, .blue:hover, .pink:hover{opacity: 1;}
+
+.colors .black:hover, .red:hover, .blue:hover, .pink:hover, .yellow:hover{opacity: 80%;}
+
+.talles{
+    margin-top: 30px;
+}
+
+.tamaño{
+    font-size: 15px;
+    font-family: "ITC Avant Garde Gothic LT";
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.808);
+    background-color: #fff;
+    padding-left: 25px;
+}
+
+.unidades{
+    font-size: 14px;
+    font-family: "ITC Avant Garde Gothic LT";
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+#caracteristicas, select, option{
+    background-color: #fff;
+    border: 0;
+    font-family: "ITC Avant Garde Gothic LT";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.02em;
+}
+
+.joelbidal{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.joelbidal a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    margin-left: 3px;
+}
+
+.joelbidal a:hover{color: rgba(0, 0, 0, 0.8);
+}
