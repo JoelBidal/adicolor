@@ -1,3 +1,10 @@
+/* Tipografía */
+@font-face{
+    font-family: "ITC Avant Garde Gothic LT";
+    src: url(fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Mediana.ttf), url(fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Mediana.otf), url(fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Mediana.eot);
+}
+
+/* Web */
 .main-section{
     display: flex;
     justify-content: center;
@@ -274,7 +281,7 @@
     display: none;
     text-align: left;
     animation-name: aparecerCaracteristicas;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
 
 @keyframes aparecerCaracteristicas{
@@ -312,10 +319,9 @@
 
 #caracteristicas .contenedor-remera{
     width: 100%;
-    height: 250px;
-    /* background-color: #eceff1; */
-    background-color: #fff;
-    margin: 10px 0;
+    height: 270px;
+    background-color: #eceff1;
+    margin: 15px 0;
 
     display: flex;
     justify-content: center;
@@ -323,7 +329,7 @@
 }
 
 .contenedor-remera img{
-    max-width: 330px;
+    max-width: 270px;
     height: auto;
     cursor: pointer;
     animation-name: aparecerImg;
@@ -364,7 +370,7 @@
 .colors .black:hover, .red:hover, .blue:hover, .pink:hover, .yellow:hover{opacity: 80%;}
 
 .talles{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .tamaño{
@@ -398,7 +404,7 @@
 .joelbidal{
     width: 100%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     font-size: 12px;
