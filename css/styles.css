@@ -1,7 +1,7 @@
 /* Tipografía */
 @font-face{
     src:url('fonts/ITC Avant Garde Gothic LT.ttf');
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
 }
 
 /* Web */
@@ -103,7 +103,7 @@
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 600;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-style: normal;
     color: #000;
     cursor: pointer;
@@ -116,7 +116,7 @@
     font-size: 28px;
     font-weight: 800;
     letter-spacing: -1px;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     color: rgb(112, 87, 221);
     margin-left: 190px;
     cursor: pointer;
@@ -124,7 +124,7 @@
 
 #footer span{
     font-size: 14px;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     color: #000;
     font-weight: 600;
 }
@@ -195,7 +195,7 @@
 
 #texto-descriptivo h1{
     font-size: 75px;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     color: #fff;
     font-weight: 600;
     padding-left: 50px;
@@ -261,7 +261,7 @@
 #back h2{
     font-size: 14px;
     font-weight: 600;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-style: normal;
     color: #000;
     margin-right: 5px;
@@ -293,7 +293,7 @@
 #caracteristicas h5, h6{
     font-size: 13px;
     font-weight: 600;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-style: normal;
     color: rgba(0, 0, 0, 0.3);
 }
@@ -311,7 +311,7 @@
 #caracteristicas h1{
     font-size: 20px;
     font-weight: 600;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-style: normal;
     color: #000;
     padding: 4px 25px;
@@ -375,7 +375,7 @@
 
 .tamaño{
     font-size: 15px;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-weight: 200;
     color: rgba(0, 0, 0, 0.808);
     background-color: #fff;
@@ -384,7 +384,7 @@
 
 .unidades{
     font-size: 14px;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-weight: 400;
     letter-spacing: 0.01em;
     color: rgba(0, 0, 0, 0.3);
@@ -394,7 +394,7 @@
 #caracteristicas, select, option{
     background-color: #fff;
     border: 0;
-    font-family: "ITC Avant Garde Gothic LT";
+    font-family: 'ITC Avant Garde Gothic LT';
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7);
